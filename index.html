@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Hotel Management System</h1>
+  <form id="booking-form">
+    <label for="custName">Customer Name:</label>
+    <input type="text" id="custName" required>
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="datetime-local" id="checkInDate" required>
+    <label for="checkOutDate">Check-out Date:</label>
+    <input type="datetime-local" id="checkOutDate" required>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" required>
+      <option value="normal">Normal</option>
+      <option value="deluxe">Deluxe</option>
+    </select>
+    <button type="submit">Generate Invoice</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <div id="invoice"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
